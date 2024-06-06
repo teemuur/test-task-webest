@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.classList.contains("counter__decrease")) {
       const input =
         e.target.nextElementSibling.querySelector(".counter__input");
-      if (parseInt(input.value) > 1) {
+      if (parseInt(input.value) > 0) {
         input.value = parseInt(input.value) - 1;
         const nodeId = e.target.closest(".product-card").id;
         addToLocalStorage(nodeId, input.value);
